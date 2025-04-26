@@ -1,11 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import logo from "./../../assets/home-img/logo.jpg"
+import Search from '../Search'
 
  const Header = () => {
   return (
     <div>
       <header>
-        <div className='top-strip py-2 border-pink-500 border-b-[1px]'>
+        <div className='top-strip py-2 border-t-[1px] border-gray-500 border-b-[10px]'>
           <div className='container'>
             <div className='flex items-center justify-between'>
               <div className='col1 w-[50%]'>
@@ -25,6 +27,27 @@ import { Link } from 'react-router-dom'
             </div>
 
           </div>
+        </div>
+
+        <div className='header bg-[#ffffcc]  '>
+          <div className='container flex items-center justify-between py-2'>
+            <div className='col1 w-[20%] '>
+              <Link to={"/"}>
+              <img src={logo} alt='brand-logo' className='h-[60px] w-[80px] rounded-md'/>
+              </Link>
+
+            </div>
+
+            <div className='col2 w-[45%]'>
+              <Search/>
+
+            </div>
+
+            <div className='col3 w-[30%]'>
+
+            </div>
+          </div>
+
         </div>
       </header>
     </div>
