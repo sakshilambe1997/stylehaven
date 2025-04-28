@@ -8,6 +8,7 @@ import IconButton from '@mui/material/IconButton';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoMdGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa6";
+import Tooltip from '@mui/material/Tooltip';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -65,28 +66,34 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
                    <Link to="/register" className='link transition text-[15px] font-[500]'> Register</Link>         
                 </li>
                 <li>
+                <Tooltip title="Compare">
                 <IconButton aria-label="cart">
       <StyledBadge badgeContent={4} color="secondary">
       <IoMdGitCompare />
       </StyledBadge>
     </IconButton>
+    </Tooltip>
                 </li>
 
                 <li>
+                <Tooltip title="Whishlist">
                 <IconButton aria-label="cart">
       <StyledBadge badgeContent={4} color="secondary">
       <MdOutlineShoppingCart />
       </StyledBadge>
     </IconButton>
+    </Tooltip>
                 </li>   
 
 
                 <li>
+                <Tooltip title="Cart">
                 <IconButton aria-label="cart">
       <StyledBadge badgeContent={4} color="secondary">
         <FaRegHeart />
       </StyledBadge>
     </IconButton>
+    </Tooltip>
                 </li>
               </ul>
 
