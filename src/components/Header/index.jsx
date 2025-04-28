@@ -9,6 +9,7 @@ import { MdOutlineShoppingCart } from "react-icons/md";
 import { IoMdGitCompare } from "react-icons/io";
 import { FaRegHeart } from "react-icons/fa6";
 import Tooltip from '@mui/material/Tooltip';
+import Navigation from './Navigation';
 
 const StyledBadge = styled(Badge)(({ theme }) => ({
   '& .MuiBadge-badge': {
@@ -22,8 +23,8 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
  const Header = () => {
   return (
     <div>
-      <header>
-        <div className='top-strip py-2 border-t-[1px] border-gray-500 border-b-[10px]'>
+      <header className='bg-white'>
+        <div className='top-strip py-2 border-t-[1px] border-gray-250 border-b-[10px]'>
           <div className='container'>
             <div className='flex items-center justify-between'>
               <div className='col1 w-[50%]'>
@@ -45,7 +46,7 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
           </div>
         </div>
 
-        <div className='header bg-[#ffffcc]  '>
+        <div className='headerpy-4   border-gray-300 border-b-[1px]  '>
           <div className='container flex items-center justify-between py-2'>
             <div className='col1 w-[20%] '>
               <Link to={"/"}>
@@ -101,6 +102,10 @@ const StyledBadge = styled(Badge)(({ theme }) => ({
           </div>
 
         </div>
+
+        <Navigation/>
+
+
       </header>
     </div>
   )

@@ -1,10 +1,9 @@
 @import "tailwindcss";
 
-
-
 body{
    font-family: "Montserrat", sans-serif;
    font-optical-sizing: auto;
+   background-color: #f5f0f0;
 }
 
 .container{
